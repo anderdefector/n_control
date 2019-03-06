@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<launch>
+	<node pkg="n_control" name="C_Master" type="C_Master" output="log" respawn="false" launch-prefix="gnome-terminal -e" >
+		<param name="autosize" value="true"/>
+	</node>
+	<node pkg="n_control" name="C_Vx" type="C_Vx">
+		<param name="autosize" value="true"/>
+	</node>
+	<node pkg="n_control" name="C_Vy" type="C_Vy">
+		<param name="autosize" value="true"/>
+	</node>
+	<node pkg="n_control" name="C_Vz" type="C_Vz">
+		<param name="autosize" value="true"/>
+	</node>
+	<node pkg="n_control" name="C_Vaz" type="C_Vaz">
+		<param name="autosize" value="true"/>
+	</node>
+</launch>
